@@ -41,7 +41,7 @@ app.prepare().then(() => {
   );
 
   // Handle all other requests with Next.js
-  server.all('*', (req, res) => {
+  server.all('https://youandusclient.vercel.app', (req, res) => {
     return handle(req, res);
   });
 
